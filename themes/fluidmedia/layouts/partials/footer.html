@@ -1,0 +1,50 @@
+<footer id="main-footer">
+		<div class="container">
+			<div class="row">		
+				<div class="col-md-3 rp30">
+					<div class="widget">
+						<img src="{{ print "img/logo-light.png" | relURL }}" alt="logo" class="bm30" />
+					</div>
+				</div>	
+				<div class="col-md-3 rp30">
+					<div class="widget">
+						<h5>About Us</h5>
+						<p>Fluid Media Productions was started in 2016 by a 14 year old with an aspiring dream.<br> Fluid Media Productions adapts to the clients needs what ever they may be, big or small.</p>
+					</div>
+				</div>
+				<div class="col-md-3 rp30">
+					<div class="widget">
+						<h5>Categories</h5>
+						<ul>
+						   <li>Video Production</li>
+						   <li>Web Design</li>
+						   <li>Photography</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="widget">
+						<h5>Instagram</h5>
+						<div class="instafeed"></div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</footer>
+	<footer id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p>&copy; Fluid Media Productions {{ dateFormat "2006" now }}</p>
+				</div>
+				<div class="col-md-6">
+					<ul class="pull-right social">
+                      {{ partial "social" . }}
+					</ul>
+				</div>
+			</div>
+		</div>
+</footer>
+{{ partial "foot/scripts" . }}
+</body>
+</html>
