@@ -2,4 +2,26 @@
 
 {{ partial "index/top" . }}
 
+<section id="services" class="page-section light-wrapper no-bottom">
+  <div class="container-fluid">
+    <div class="row">
+     <div class="page-header text-center">
+	<h1>What we specialise in<small>We are good at this</small></h1>
+     </div> 
+     {{ range $index, $element := where (where .Site.Pages "Section" "specialities") "IsPage" true }}
+       <div class="col-md-3 service even">
+         <i class="fa {{ $element.Params.icon }}"></i>
+         <h3>{{ $element.Title }}</h3>
+         <p>{{ $element.Params.summary }}</p>
+         <a href="{{ $element.URL }}" class="btn btn-white tm15">Learn More</a>
+       </div>
+       {{ if modBool (add $index 1) 4 }}
+         </div>
+         <div class="row">
+       {{ end }}
+     {{ end }}
+   </div>
+  </div>
+</section>
+
 {{ partial "footer" . }}
