@@ -7,8 +7,20 @@
   <div class="bar top-bar">
 		<div id="logo">
 			<a href="{{ print "/" | absURL }}">
-				<img src="{{ print "img/logo.png" | relUrl }}" alt="logo" />
+				<img src="{{ print "img/logo.png" | relURL }}" alt="logo" />
 			</a>
 		</div>
 		<a href="#" id="menu-toggle"><span></span></a>
 	</div>	
+
+  <nav>
+		<ul class="pull-left social">
+			{{ partial "social" . }}
+		</ul>
+		
+   <ul class="pull-right">
+   {{ range .Site.Menus.main }}
+       <li><a href='{{ .URL }}'>{{- .Name -}}</a></li>
+   {{ end }}
+    </ul>
+</nav>
