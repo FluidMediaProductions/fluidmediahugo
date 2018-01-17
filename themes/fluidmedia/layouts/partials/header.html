@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.Language.Lang }}'>
+
+{{ partial "head/head" . }}
+
+<body>
+  <div class="bar top-bar">
+		<div id="logo">
+			<a href="{{ print "/" | absURL }}">
+				<img src="{{ print "img/logo.png" | relUrl }}" alt="logo" />
+			</a>
+		</div>
+		<a href="#" id="menu-toggle"><span></span></a>
+	</div>	
