@@ -134,4 +134,35 @@
     </div>
 </section>
 
+<section id="about" class="page-section light-wrapper no-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="page-header text-center">
+                <h1>Our Team<small>The Best of the Best</small></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            {{ range $element := where (where .Site.Pages "Section" "team") "IsPage" true }}
+                <article class="col-md-6 team-member text-right">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="page-header">
+                                <h1>{{ $element.Title }}<small>{{ $element.Params.position }}</small></h1>
+                                <p>{{ $element.Params.summary }}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <img src="{{ $element.Params.image }}" alt="" />
+                        </div>
+                    </div>
+                </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
 {{ partial "footer" . }}
