@@ -4,12 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/themes/fluidmedia/layouts/index.html" line="36" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f7739b1-699e-48ed-bdca-ae3dec5630f9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/content/work/cantonbury-advisory.md" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/content/work/ppd-gallery.md" afterPath="$PROJECT_DIR$/content/work/ppd-gallery.md" />
-      <change beforePath="$PROJECT_DIR$/themes/fluidmedia/layouts/index.html" afterPath="$PROJECT_DIR$/themes/fluidmedia/layouts/index.html" />
-    </list>
+    <list default="true" id="7f7739b1-699e-48ed-bdca-ae3dec5630f9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -181,12 +176,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517654889821</updated>
-      <workItem from="1517654892082" duration="5914000" />
+      <workItem from="1517654892082" duration="5982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5914000" />
+    <option name="totallyTimeSpent" value="5982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1602" height="876" extended-state="6" />
