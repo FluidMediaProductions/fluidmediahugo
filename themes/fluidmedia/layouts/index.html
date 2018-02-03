@@ -96,4 +96,42 @@
     </div>
 </section>
 
+<section class="page-section parallax" style="background-image: url('img/mountains.jpg');">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="page-header text-center">
+                <h1>Success is not final, failure is not fatal:<br> it is the courage to continue that counts.<small>Winston Churchill</small></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="page-section dark-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="page-header text-center">
+                <h1>Our Products<small>They are very good</small></h1>
+            </div>
+
+            {{ range $element := where (where .Site.Pages "Section" "products") "IsPage" true }}
+            <div class="col-sm-4">
+                <section class="pricing-table">
+                    <h3>{{ $element.Title }}<span>{{ $element.Params.summary }}<br> Starting At:</span></h3>
+                    <h2>
+                        <span class="price"><sup>£</sup>{{ $element.Params.price }}</span>
+                        <span class="deets">Price may vary.</span>
+                    </h2>
+                    <ul>
+                        {{ range $item := $element.Params.includes }}
+                            <li>{{ $item }}</li>
+                        {{ end }}
+                    </ul>
+                    <a href="{{ $element.URL }}" class="btn btn-primary">Learn More</a>
+                </section>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
 {{ partial "footer" . }}
