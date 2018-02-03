@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <div class="row">
      <div class="page-header text-center">
-	<h1>What we specialise in<small>We are good at this</small></h1>
+	<h1>What we specialise in<small>We're good at this</small></h1>
      </div> 
      {{ range $index, $element := where (where .Site.Pages "Section" "specialities") "IsPage" true }}
        <div class="col-md-3 service even">
@@ -22,6 +22,57 @@
      {{ end }}
    </div>
   </div>
+</section>
+
+<section id="work" class="page-section dark-wrapper no-bottom">
+    <div class="wrapper">
+        <div class="page-header text-center">
+            <h1>Our Work<small>Its Not Bad</small></h1>
+        </div>
+    </div>
+    {{ $.Scratch.Add "tags" (slice "All") }}
+    {{ range $element := where (where .Site.Pages "Section" "work") "IsPage" true }}
+        {{ range $tag := $element.Params.tags }}
+            {{ if not (in ($.Scratch.Get "tags") $tag)}}
+                {{ $.Scratch.Add "tags" (slice $tag) }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    <ul id="filters">
+        {{ range $tag := $.Scratch.Get "tags" }}
+        <li>
+            {{ if (eq $tag "All") }}
+                <a href=".item" class="btn active">All</a>
+            {{ else }}
+                <a href=".{{ lower (replace $tag " " "-" )}}" class="btn">{{ $tag }}</a>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+    <div id="loader">
+        <div class="item"></div>
+    </div>
+    <div id="container">
+        {{ range $index, $element := where (where .Site.Pages "Section" "work") "IsPage" true }}
+            <div class="item small {{ range $tagIndex, $tag := $element.Params.tags }}{{ lower (replace $tag " " "-" )}} {{ end }}">
+                <div class="item-inner">
+                    <a href="{{ $element.URL }}">
+                        <img src="/img/p1.png" alt="Portfolio Item" />
+                        <div class="project-title">
+                            <div class="title-wrapper">
+                                <h3>{{ $element.Title }}</h3>
+                                <span>
+                                    {{ range $tagIndex, $tag := $element.Params.tags }}
+                                        {{ $tag }}{{ if not (eq $tagIndex (sub (len $element.Params.tags) 1))}},{{ end }}
+                                    {{ end }}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        {{ end }}
+    </div>
 </section>
 
 {{ partial "footer" . }}
