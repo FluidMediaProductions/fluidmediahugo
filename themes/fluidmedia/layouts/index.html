@@ -57,7 +57,7 @@
             <div class="item small {{ range $tagIndex, $tag := $element.Params.tags }}{{ lower (replace $tag " " "-" )}} {{ end }}">
                 <div class="item-inner">
                     <a href="{{ $element.URL }}">
-                        <img src="/img/p1.png" alt="Portfolio Item" />
+                        <img src="{{ $element.Params.image }}" alt="Portfolio Item" />
                         <div class="project-title">
                             <div class="title-wrapper">
                                 <h3>{{ $element.Title }}</h3>
@@ -161,6 +161,39 @@
                     </div>
                 </article>
             {{ end }}
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="page-section dark-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="page-header text-center">
+                <h1>Contact Us<small>Here's a contact form</small></h1>
+            </div>
+
+            <div class="col-sm-8">
+                <div id="message"></div>
+                <form action="https://formspree.io/hello@fluidmedia.wales" method="post">
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                    <input type="text" name="website" id="website" placeholder="Website" />
+                    <textarea name="comments" id="comments" placeholder="Comments"></textarea>
+                    <input type="hidden" name="_next" value="//fluidmedia.wales" />
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+            </div>
+
+            <div class="col-sm-4 lp30">
+                <h5>Contact Us</h5>
+                <p>If you have a porject for us feel free to contact us about it! We aim to respond within 24 hours.</p>
+                <ul class="fa-ul">
+                    <li class="bm15"><i class="fa fa-map-marker fa-fw fa-2x fa-li"></i> Cardiff, Wales</li>
+                    <li class="bm15"><i class="fa fa-phone-square fa-fw fa-2x fa-li"></i> +44 7507926923</li>
+                    <li class="bm15"><i class="fa fa-laptop fa-fw fa-2x fa-li"></i> <a href="mailto:hello@fluidmedia.wales">hello@fluidmedia.wales</a></li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </section>

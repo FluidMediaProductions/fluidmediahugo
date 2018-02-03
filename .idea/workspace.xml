@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f7739b1-699e-48ed-bdca-ae3dec5630f9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/content/team/ben.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/content/team/josh.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/content/team/sam.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/content/work/cantonbury-advisory.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/content/work/ppd-gallery.md" afterPath="$PROJECT_DIR$/content/work/ppd-gallery.md" />
       <change beforePath="$PROJECT_DIR$/themes/fluidmedia/layouts/index.html" afterPath="$PROJECT_DIR$/themes/fluidmedia/layouts/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,8 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/fluidmedia/layouts/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="158" column="63" lean-forward="false" selection-start-line="158" selection-start-column="63" selection-end-line="158" selection-end-column="63" />
+            <state relative-caret-position="224">
+              <caret line="59" column="59" lean-forward="false" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#section#3;n#!!top" expanded="true" />
               </folding>
@@ -35,31 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ben.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/team/ben.md">
+      <file leaf-file-name="cantonbury-advisory.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/work/cantonbury-advisory.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sam.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/team/sam.md">
+      <file leaf-file-name="ppd-gallery.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/work/ppd-gallery.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="josh.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/team/josh.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="34">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -73,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/content/work/ppd-gallery.md" />
         <option value="$PROJECT_DIR$/content/feedback/comtec.md" />
         <option value="$PROJECT_DIR$/content/feedback/douglas.md" />
         <option value="$PROJECT_DIR$/content/feedback/ppd.md" />
@@ -84,9 +72,11 @@
         <option value="$PROJECT_DIR$/content/products/simple-video.md" />
         <option value="$PROJECT_DIR$/content/products/insane-video.md" />
         <option value="$PROJECT_DIR$/content/team/ben.md" />
-        <option value="$PROJECT_DIR$/themes/fluidmedia/layouts/index.html" />
         <option value="$PROJECT_DIR$/content/team/sam.md" />
         <option value="$PROJECT_DIR$/content/team/josh.md" />
+        <option value="$PROJECT_DIR$/content/work/ppd-gallery.md" />
+        <option value="$PROJECT_DIR$/themes/fluidmedia/layouts/index.html" />
+        <option value="$PROJECT_DIR$/content/work/cantonbury-advisory.md" />
       </list>
     </option>
   </component>
@@ -139,25 +129,12 @@
               <item name="fluidmediahugo" type="b2602c69:ProjectViewProjectNode" />
               <item name="fluidmediahugo" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="team" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fluidmediahugo" type="b2602c69:ProjectViewProjectNode" />
               <item name="fluidmediahugo" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fluidmediahugo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fluidmediahugo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="fluidmedia" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fluidmediahugo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fluidmediahugo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="fluidmedia" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -173,6 +150,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/work" />
       <recent name="$PROJECT_DIR$/content/products" />
       <recent name="$PROJECT_DIR$/themes/fluidmedia/layouts" />
       <recent name="$PROJECT_DIR$/content/feedback" />
@@ -203,12 +181,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517654889821</updated>
-      <workItem from="1517654892082" duration="5341000" />
+      <workItem from="1517654892082" duration="5914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5341000" />
+    <option name="totallyTimeSpent" value="5914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1602" height="876" extended-state="6" />
@@ -244,14 +222,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/content/work/ppd-gallery.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/specialities/blank.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -372,16 +342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/fluidmedia/layouts/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="158" column="63" lean-forward="false" selection-start-line="158" selection-start-column="63" selection-end-line="158" selection-end-column="63" />
-          <folding>
-            <element signature="n#style#0;n#section#3;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/team/sam.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -394,6 +354,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/work/ppd-gallery.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/fluidmedia/layouts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="59" column="59" lean-forward="false" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#section#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/work/cannon.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/work/cantonbury-advisory.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
