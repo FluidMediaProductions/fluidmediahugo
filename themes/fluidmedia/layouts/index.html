@@ -75,4 +75,25 @@
     </div>
 </section>
 
+<section id="services-inverse" class="page-section dark-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="page-header text-center">
+                <h1>Client Feedback</h1>
+            </div>
+
+            {{ range $index, $element := where (where .Site.Pages "Section" "feedback") "IsPage" true }}
+                <div class="col-sm-4 service-alt">
+                    <div class="inner">
+                        <i class="fa fa-quote-right"></i>
+                        <h3>{{ $element.Title }}</h3>
+                        <p>{{ $element.Params.summary }}<br></p>
+                        <a href="{{ $element.URL }}" class="btn tm15">Learn More</a>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
 {{ partial "footer" . }}
