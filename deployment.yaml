@@ -1,0 +1,63 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: fluidmedia
+---
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: website
+  namespace: fluidmedia
+  labels:
+    app: website
+  annotations:
+    kubernetes.io/tls-acme: "true"
+spec:
+  tls:
+  - hosts:
+    - fluidmedia.wales
+    secretName: website-tls
+  rules:
+  - host: fluidmedia.wales
+    http:
+      paths:
+      - path: "/"
+        backend:
+          serviceName: website
+          servicePort: 80
+---
+kind: Service 
+apiVersion: v1  
+metadata:   
+  name: website
+  namespace: fluidmedia  
+  labels:
+    app: website
+spec:  
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  selector:
+    app: website
+  type: ClusterIP
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: website
+  namespace: fluidmedia
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: website
+    spec:
+      containers:
+      - name: nginx
+        image: evilben/fluidmediahugo:latest
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 80
+            protocol: TCP
